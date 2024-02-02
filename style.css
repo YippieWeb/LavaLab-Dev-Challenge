@@ -28,6 +28,8 @@
 
 .main {
     height: 112vh;
+    padding-left: 70px;
+    /* circular purple gradient background */
     background: radial-gradient(circle at center 500px, var(--gradient-purple) 0%, rgba(128, 0, 128, 0) 100%);
 }
 
@@ -47,13 +49,10 @@
     font-size: 34px;
 }
 
+/* logo styling */
 .header img {
     width: 48px;
     height: 48px;
-}
-
-.main {
-    padding-left: 70px;
 }
 
 .tagline h1 { 
@@ -64,11 +63,12 @@
     padding-top: 168px;
 }
 
+/* tools section with grid layout */
 .tools {
     padding-top: 60px;
     width: 1220px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with identical length */
     justify-content: center;
     grid-gap: 40px;
 }
@@ -80,6 +80,7 @@
     padding-top: 105px;
 }
 
+/* general button styling */
 .button {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 500;
@@ -103,6 +104,7 @@
     color: white
 }
 
+/* 'lift' effect when hovered */
 .button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
