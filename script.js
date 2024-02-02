@@ -32,7 +32,7 @@ class ToolCard extends HTMLElement {
         setTimeout(() => {
           btn.textContent = btn.classList.contains('active') ? 'Connected' : 'Connect';
         }, 200); // Delay in milliseconds
-      }
+    }
   
     render() {
       this.shadowRoot.innerHTML = `
@@ -105,7 +105,6 @@ class ToolCard extends HTMLElement {
         </div>
       `;
     }
-  }
+}
   
-  customElements.define('tool-card', ToolCard);
-  
+customElements.define('tool-card', ToolCard);
