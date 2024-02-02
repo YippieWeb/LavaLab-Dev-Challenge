@@ -1,6 +1,8 @@
 :root{
     --hive-purple: #9730FF;
     --purple: #B71DFF;
+    --gradient-purple: rgba(183, 29, 255, 0.2);
+    --gradient-purple-soft: rgba(183, 29, 255, 0.05);
     --light-gray: #EEEEEE;
 }
 
@@ -15,8 +17,14 @@
     font-display: swap;
   }
 
-body {
+* {
     margin: 0;
+    padding: 0;
+ }
+
+.main {
+    height: 100vh;
+    background: radial-gradient(circle at center 500px, var(--gradient-purple) 0%, rgba(128, 0, 128, 0) 100%);
   }
 
 .header {
@@ -25,26 +33,26 @@ body {
     align-items: center;
     height: 100px;
     border-bottom: 1px solid var(--light-gray);
+    background: radial-gradient(circle, var(--gradient-purple-soft) 0%, rgba(128, 0, 128, 0) 80%);
   }
 
 .header h1 {
     color: var(--hive-purple);
     font-family: 'Satoshi', sans-serif;
     padding-left: 71px;
-    font-size: 32px;
+    font-size: 33px;
   }
 
 .header img {
     width: 48px;
     height: 48px;
-    padding-right: 8px;
   }
 
 .tagline h1 { 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
     font-size: 47px; 
     font-weight: 400; 
-    transform: scaleY(1.04);
+    transform: scaleY(1.03);
     transform-origin: left center; 
-    padding: 133px 0 0 70px;
+    padding: 165px 0 0 70px;
   }
