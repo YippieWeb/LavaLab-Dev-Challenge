@@ -61,11 +61,10 @@
 }
 
 .tools {
-    max-width: 1250px;
+    padding-top: 60px;
+    width: 1220px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
     justify-content: center;
-    padding: 0px;
+    grid-gap: 40px;
 }
-  

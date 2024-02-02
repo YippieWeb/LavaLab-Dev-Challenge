@@ -45,12 +45,12 @@ class ToolCard extends HTMLElement {
             border-radius: 8px;
             padding: 16px;
             width: 240px;
-            height: 130px;
+            height: 125px;
             font-family: Helvetica, Arial, sans-serif; 
             background-color: #FEF9F8;
         }
         .content {
-            padding: 15px;
+            padding: 10px 15px;
         }
         .header {
             display: flex;
@@ -78,8 +78,8 @@ class ToolCard extends HTMLElement {
             border: none;
         }
         .logo {
-            height: 25px;
-            width: 25px;
+            height: 28px;
+            width: 28px;
         }
         .name {
             font-size: 18px;
