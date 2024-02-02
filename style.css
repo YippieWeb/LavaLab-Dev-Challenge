@@ -40,7 +40,7 @@
     color: var(--hive-purple);
     font-family: 'Satoshi', sans-serif;
     padding-left: 71px;
-    font-size: 33px;
+    font-size: 34px;
   }
 
 .header img {
@@ -48,11 +48,14 @@
     height: 48px;
   }
 
+.main {
+    padding-left: 70px;
+  }
+
 .tagline h1 { 
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
-    font-size: 47px; 
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size: 48px; 
     font-weight: 400; 
-    transform: scaleY(1.03);
     transform-origin: left center; 
-    padding: 165px 0 0 70px;
+    padding-top: 168px;
   }
