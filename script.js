@@ -59,7 +59,7 @@ class ToolCard extends HTMLElement {
             width: 100%;
         }
         .connect-btn {
-            width: 100px;
+            width: 98px;
             height: 25px;
             margin: 0; 
             border: 1px solid #C8C8C8;
@@ -87,7 +87,7 @@ class ToolCard extends HTMLElement {
             margin: 8px 0;
         }
         .description {
-            font-size: 13px;
+            font-size: 13.5px;
             font-weight: 400;
         }
     </style>
