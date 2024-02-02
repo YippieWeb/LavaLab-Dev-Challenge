@@ -24,6 +24,15 @@ class ConnectCard extends HTMLElement {
     attributeChangedCallback(name, oldValue, newValue) {
       this.render();
     }
+
+    toggleButton() {
+        const btn = this.shadowRoot.querySelector('.connect-btn');
+        btn.classList.toggle('active');
+        // Delay the text change by 0.2 seconds
+        setTimeout(() => {
+          btn.textContent = btn.classList.contains('active') ? 'Connected' : 'Connect';
+        }, 200); // Delay in milliseconds
+      }
   
     render() {
       this.shadowRoot.innerHTML = `
@@ -53,12 +62,14 @@ class ConnectCard extends HTMLElement {
             width: 100px;
             height: 25px;
             margin: 0; 
-            border: 1px solid #e0e0e0;
+            border: 1px solid #C8C8C8;
             border-radius: 4px;
             background-color: white;
             cursor: pointer;
             outline: none;
             font-size: 12px;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+            transition-delay: 0.2s;
         }
         .connect-btn.active {
             background-color: #DFFDE0;
@@ -92,12 +103,6 @@ class ConnectCard extends HTMLElement {
           </div>
         </div>
       `;
-    }
-  
-    toggleButton() {
-      const btn = this.shadowRoot.querySelector('.connect-btn');
-      btn.classList.toggle('active');
-      btn.textContent = btn.classList.contains('active') ? 'Connected' : 'Connect';
     }
   }
   
