@@ -71,6 +71,7 @@ class ToolCard extends HTMLElement {
                 background-color: white;
                 cursor: pointer;
                 outline: none;
+                color: black;
                 font-size: 12px;
                 font-weight: 100;
                 transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
@@ -91,7 +92,7 @@ class ToolCard extends HTMLElement {
                 margin: 8px 0;
             }
             .description {
-                font-size: 13.5px;
+                font-size: 13px;
                 font-weight: 400;
             }
         </style>
