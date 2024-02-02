@@ -27,7 +27,7 @@
 }
 
 .main {
-    height: 112vh;
+    height: 100%;
     padding-left: 70px;
     /* circular purple gradient background */
     background: radial-gradient(circle at center 500px, var(--gradient-purple) 0%, rgba(128, 0, 128, 0) 100%);
@@ -67,11 +67,23 @@
 /* tools section with grid layout */
 .tools {
     padding-top: 60px;
-    width: 1220px;
+    max-width: fit-content;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns with identical length */
-    justify-content: center;
+    justify-content: flex-start;
     grid-gap: 40px;
+}
+
+@media (max-width: 992px) {
+    .tools {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .tools {
+        grid-template-columns: 1fr;
+    }
 }
 
 .buttons {
@@ -79,6 +91,7 @@
     justify-content: flex-start;
     gap: 25px;
     padding-top: 105px;
+    padding-bottom: 100px;
 }
 
 /* general button styling */
@@ -105,8 +118,7 @@
     color: white
 }
 
-/* 'lift
-' effect when hovered */
+/* 'lift' effect when hovered */
 .button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
