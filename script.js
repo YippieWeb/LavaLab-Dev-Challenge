@@ -1,4 +1,4 @@
-class ConnectCard extends HTMLElement {
+class ToolCard extends HTMLElement {
     constructor() {
       super();
       this.attachShadow({ mode: 'open' });
@@ -44,7 +44,7 @@ class ConnectCard extends HTMLElement {
             border: 1px solid #C8C8C8;
             border-radius: 8px;
             padding: 16px;
-            width: 250px;
+            width: 240px;
             height: 130px;
             font-family: Helvetica, Arial, sans-serif; 
             background-color: #FEF9F8;
@@ -68,6 +68,7 @@ class ConnectCard extends HTMLElement {
             cursor: pointer;
             outline: none;
             font-size: 12px;
+            font-weight: 100;
             transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
             transition-delay: 0.2s;
         }
@@ -86,8 +87,8 @@ class ConnectCard extends HTMLElement {
             margin: 8px 0;
         }
         .description {
-            font-size: 14px;
-            font-weight: 300;
+            font-size: 13px;
+            font-weight: 400;
         }
     </style>
         <div class="card">
@@ -106,5 +107,5 @@ class ConnectCard extends HTMLElement {
     }
   }
   
-  customElements.define('connect-card', ConnectCard);
+  customElements.define('tool-card', ToolCard);
   
