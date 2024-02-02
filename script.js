@@ -33,7 +33,7 @@ class ToolCard extends HTMLElement {
         btn.classList.toggle('active');
         // delay the text change by 0.2 seconds
         setTimeout(() => {
-          btn.textContent = btn.classList.contains('active') ? 'Connected' : 'Connect';
+            btn.textContent = btn.classList.contains('active') ? 'Connected' : 'Connect';
         }, 200);
     }
     
