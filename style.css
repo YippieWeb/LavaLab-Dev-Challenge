@@ -56,6 +56,12 @@
     padding-right: 70px;
 }
 
+.user-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .tagline h1 { 
     font-family: Helvetica, Arial, sans-serif; 
     font-size: 48px; 
